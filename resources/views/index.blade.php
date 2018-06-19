@@ -37,7 +37,7 @@
                         <img src="{{ asset('img/lg_xigna.png') }}" alt="">
                     </div>
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/XignaCV">
                     <div class="info__network">
                         <div class="social">
                             <i class="fab fa-facebook-f"></i>

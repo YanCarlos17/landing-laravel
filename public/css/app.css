@@ -13,7 +13,7 @@ body {
 
 .up {
   position: fixed;
-  bottom: 35px;
+  bottom: 65px;
   right: 10px;
   width: 45px;
   height: 45px;
@@ -80,20 +80,21 @@ body {
 }
 
 .form__input {
-  width: 70%;
+  width: 75%;
   height: 2rem;
   border: 1px solid lightgray;
   margin: 10px auto;
   font-size: 15px;
+  font-weight: 300;
   padding-left: 10px;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #F9F7F9;
-  color: #C6C4C6 !important;
+  color: gray;
   border-radius: 4px;
 }
 
 .form textarea {
-  width: 71%;
+  width: 76%;
   height: 3.5rem;
   border: 1px solid lightgray;
   margin: 10px auto;
@@ -101,7 +102,8 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #F9F7F9;
   font-size: 15px;
-  color: #C6C4C6 !important;
+  font-weight: 300;
+  color: gray;
   border-radius: 4px;
 }
 
@@ -114,12 +116,13 @@ body {
 }
 
 .declaration__text {
-  font-size: 10px;
+  font-size: 11px;
+  line-height: 10px;
   color: #c3c7c9;
   width: 60%;
   text-align: justify;
   margin-left: 26%;
-  margin-top: -32px;
+  margin-top: -33px;
   font-weight: 200;
 }
 
@@ -146,10 +149,11 @@ input[type=checkbox] + label:before {
   border: 0.1em solid #5f19a4;
   border-radius: 50%;
   display: inline-block;
-  width: 1.2em;
-  height: 1em;
-  padding-bottom: 0.3em;
-  margin-right: 11rem;
+  width: 19px;
+  height: 16px;
+  padding-bottom: 4px;
+  margin-right: 65%;
+  margin-bottom: 1%;
   color: transparent;
   -webkit-transition: .2s;
   transition: .2s;
@@ -193,6 +197,12 @@ input[type=checkbox]:checked:disabled + label:before {
   color: white;
 }
 
+@media screen and (min-width: 400px) {
+  .main__intro {
+    padding-bottom: 70px;
+  }
+}
+
 .main__intro .intro__text {
   font-size: 23px;
   font-weight: 300;
@@ -219,11 +229,15 @@ input[type=checkbox]:checked:disabled + label:before {
 
 .main__intro img {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .main__form {
   margin-top: -105px;
+}
+
+.main__info {
+  margin-bottom: 40px;
 }
 
 .main__info .info__logo {
@@ -246,9 +260,11 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .main__info .info__phones {
-  margin: 10px auto;
+  margin: 15px auto;
   color: #db291b;
   font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .main__info .info__copy {
