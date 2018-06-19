@@ -16,8 +16,8 @@
         </div>
         <div class="main__form">
             <form class="form" action="#">
-                <h2 class="form__tittle">!Contáctanos</h2>
-                <h4 class="form__Text">e inicia las conversiones<br> en tus plataformas digitales¡</h4>
+                <h2 class="form__title">!Contáctanos</h2>
+                <h4 class="form__text">e inicia las conversiones<br> en tus plataformas digitales¡</h4>
                     <input  class="form__input" type="text" placeholder="Tú nombre"> <br>
                     <input  class="form__input" type="text" placeholder="Nombre de tu empresa"><br>
                     <input  class="form__input" type="email" placeholder="Email"><br>
@@ -44,6 +44,13 @@
                 </div>
             </div>    
         </div>
+        <nav class="up">
+            <a href="#intro">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </nav>
     </div>
+    <script src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/scroll.js')}}"></script>
 </body>
 </html>

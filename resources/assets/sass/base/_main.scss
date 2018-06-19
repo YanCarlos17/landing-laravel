@@ -1,18 +1,19 @@
 .main{
-    
+    overflow: hidden;
     &__intro{
         background-image: linear-gradient(to bottom, #1904b4, #6a15c6,
          #9f2dd8, #cf46e9, #fc61fa);
         width: 100%;
         height: 100%;
         display: block;
-        padding-bottom: 40px;
+        padding-bottom: 75px;
         color: white;
         .intro{
+            
             &__text{
                 font-size: 23px;
                 font-weight: 300;
-                padding-top: 30px;
+                padding-top: 40px;
                 text-transform: uppercase;
                 line-height: 28px;
             }
@@ -24,16 +25,19 @@
                 font-size: 29px;
             }
             &__question{
+                font-size: 19px;
                 margin-top: 10px;
+                letter-spacing: .5px;
+                font-weight: 300;
             }
         }
 
         & img{
             width: 100%;
-            margin-top: 30px;
+            margin-top: 30px; 
         }
     }
     &__form{
-        margin-top: -80px;
+        margin-top: -105px;
     }
 }

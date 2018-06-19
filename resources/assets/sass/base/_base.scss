@@ -6,3 +6,25 @@ body{
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    background: rgba(101, 3, 181,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    &:active {
+        display: flex;
+    }
+    &:hover {
+        background-color: rgb(196, 127, 252);
+    }
+    & a{
+        color: #fff;
+    }
+}
