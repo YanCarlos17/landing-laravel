@@ -6,14 +6,26 @@
     border-radius: 7px;
     z-index: 2;
     padding-top: 15px 0;
+   
 
     &__title{
         color:rgb(95, 25, 164);
         padding: 15px 0 0 0;
+        @media screen and (min-width:768px)
+        {
+            font-size: 45px;
+        }
     }
+
     &__text{
         color:rgb(95, 25, 164);
         margin-bottom: 10px;
+
+        @media screen and (min-width:768px)
+        {
+            font-size: 27px;
+            margin: 15px 0 10px 0;
+        }
     }
 
     &__input {
@@ -21,10 +33,12 @@
         height: 2rem;
         border: 1px solid lightgray;
         margin: 10px auto;
+        font-size: 15px;
         padding-left: 10px;
         font-family: 'Roboto Condensed', sans-serif;
         background-color: #F9F7F9;
-        color: #C6C4C6; 
+         color: #C6C4C6 !important;
+         
     }
     & textarea{
         width: 70%;
@@ -34,18 +48,25 @@
         padding: 10px 0 0 10px;
         font-family: 'Roboto Condensed', sans-serif;
         background-color: #F9F7F9;
+        font-size: 15px;
+         color: #C6C4C6 !important; 
     }
     & button{
         width: 70%;
         height: 2rem;
         background-color: rgb(95, 25, 164);
         color: white;
+        font-size: 15px;
     }
 }
-input[type='checkbox']{
-    text-align: justify;
-}
 .declaration__text{
-    font-size: 12px;
+    font-size: 10px;
     color: #c3c7c9;
+    width: 60%;
+    text-align: justify;
+    margin-left: 26%;
+    margin-top: -18px;
+}
+#declaracion{
+    margin-left: -65%;
 }
