@@ -15,7 +15,8 @@
 
         @media screen and (min-width:768px)
         {
-            font-size: 45px;
+            font-size: 40px;
+            padding-top: 30px;
         }
     }
 
@@ -26,8 +27,9 @@
 
         @media screen and (min-width:768px)
         {
-            font-size: 27px;
-            margin: 15px 0 10px 0;
+            font-size: 25px;
+            margin: 15px 0 30px 0;
+            line-height: 24px;
         }
     }
 
@@ -101,7 +103,7 @@
 }
 .declarations{
     position: relative;
-    margin: 13px 0 0 0;
+    margin: 33px 0 0 0;
     box-sizing: border-box;
 }
 #declaracion{
@@ -109,56 +111,39 @@
     top: 35%;
     left: 15%;
 }
-
-input[type=checkbox] + label {
-
-
-}
-
-input[type=checkbox] {
-  display: none;
-  margin-left: -50px;
-}
-
-input[type=checkbox] + label:before {
-  content: "\2714";
-  border: 0.1em solid rgb(95, 25, 164);
-  border-radius: 50%;
-  display: inline-block;
-  width: 25px;
-  height: 23px;
-  padding-bottom: 2px;
-  margin-right: 65%;
-  margin-bottom: 1%;
-  color: transparent;
-  transition: .2s; 
-  @media screen and (min-width:768px){
-    width: 35px;
-    height: 25px;
-    margin-bottom: 0;
-    padding-top: 7px;
-    margin-top: 20px;
-  } 
-}
-
-input[type=checkbox] + label:active:before {
-  transform: scale(0);
-}
-
-input[type=checkbox]:checked + label:before {
-  background-color: rgb(95, 25, 164);
-  border-color: rgb(95, 25, 164);
-  color: #fff;
+label{
+    font-size: 1.5em;
+    color:rgb(95, 25, 164);
+  }
   
-}
+  input[type=checkbox]{
+    display: none; /*solo se esconde para tener un campo personalisado*/
+  }
+  
+  input[type=checkbox] + label{
+    cursor:pointer;
+  }/*esta linea significa esto + el siguiente elemento*/
+  
+  label:before{
+    content:'';
+    content: '';
+    background: transparent;
+    border: 1px solid #5f19a4;
+    border-radius: 25px;
+    display: inline-block;
+    height: 21px;
+    width: 22px;
+    padding-top: 2px;
+    margin-left: -180px;
+    text-align: center;
+    vertical-align: middle;
+    
+  }
+  input[type=checkbox]:checked + label:before{
+    content: '✔';
+    font-size: 17px;
+    font-family:'Times New Roman';
+    color:rgb(95, 25, 164);
+  }
 
-input[type=checkbox]:disabled + label:before {
-  transform: scale(1);
-  border-color: #aaa;
-}
 
-input[type=checkbox]:checked:disabled + label:before {
-  transform: scale(1);
-  background-color: rgb(95, 25, 164);
-  border-color: rgb(95, 25, 164);
-}

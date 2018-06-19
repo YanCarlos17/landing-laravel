@@ -24,7 +24,7 @@
                     <input  class="form__input" type="number" placeholder="Teléfono de contacto" required><br>
                     <textarea name="cotizacion" id="" cols="30" rows="10" placeholder="¿Qué necesitas cotizar?" required></textarea><br>
                     <div class="declarations">
-                        <input type="checkbox" name="declaracion" id="declaracion" required>
+                        <input type="checkbox" id="declaracion" name="declaracion"/>
                         <label for="declaracion" required><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad</p></label>
                     </div>
                     <br>
