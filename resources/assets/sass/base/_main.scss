@@ -9,7 +9,7 @@
         padding-bottom: 75px;
         color: white;
         .intro{
-            
+
             &__text{
                 font-size: 23px;
                 font-weight: 300;
@@ -39,5 +39,37 @@
     }
     &__form{
         margin-top: -105px;
+    }
+    &__info{
+        .info{
+            &__logo{
+                width:55%;
+                margin: 25px auto;
+            }
+            &__logo img{
+                width: 100%;
+            }
+            &__network{
+                margin: 10px auto;
+                color:#db291b;
+                width: 33px;
+                height: 25px;
+                padding-top: 7px;
+                border: 2px solid #db291b;
+                border-radius:50%;
+            }
+            .social{
+                
+            }
+            &__phones{
+                margin :10px auto;
+                color: #db291b;
+                font-size: 20px;
+            }
+            &__copy{
+                color:#a7a7a2;
+                margin :10px auto;
+            }
+        }
     }
 }

@@ -6,11 +6,14 @@ body {
   width: 100%;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 
 .up {
   position: fixed;
-  bottom: 20px;
+  bottom: 35px;
   right: 10px;
   width: 45px;
   height: 45px;
@@ -35,7 +38,7 @@ body {
 }
 
 .up:hover {
-  background-color: #c47ffc;
+  background-color: rgba(101, 3, 181, 0.7);
 }
 
 .up a {
@@ -66,6 +69,7 @@ body {
 .form__text {
   color: #5f19a4;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -85,10 +89,11 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #F9F7F9;
   color: #C6C4C6 !important;
+  border-radius: 4px;
 }
 
 .form textarea {
-  width: 70%;
+  width: 71%;
   height: 3.5rem;
   border: 1px solid lightgray;
   margin: 10px auto;
@@ -97,6 +102,7 @@ body {
   background-color: #F9F7F9;
   font-size: 15px;
   color: #C6C4C6 !important;
+  border-radius: 4px;
 }
 
 .form button {
@@ -113,11 +119,64 @@ body {
   width: 60%;
   text-align: justify;
   margin-left: 26%;
-  margin-top: -18px;
+  margin-top: -32px;
+  font-weight: 200;
+}
+
+.declarations {
+  position: relative;
+  margin: 13px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #declaracion {
-  margin-left: -65%;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+input[type=checkbox] {
+  display: none;
+  margin-left: -50px;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #5f19a4;
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.2em;
+  height: 1em;
+  padding-bottom: 0.3em;
+  margin-right: 11rem;
+  color: transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #5f19a4;
+  border-color: #5f19a4;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #5f19a4;
+  border-color: #5f19a4;
 }
 
 .main {
@@ -165,5 +224,35 @@ body {
 
 .main__form {
   margin-top: -105px;
+}
+
+.main__info .info__logo {
+  width: 55%;
+  margin: 25px auto;
+}
+
+.main__info .info__logo img {
+  width: 100%;
+}
+
+.main__info .info__network {
+  margin: 10px auto;
+  color: #db291b;
+  width: 33px;
+  height: 25px;
+  padding-top: 7px;
+  border: 2px solid #db291b;
+  border-radius: 50%;
+}
+
+.main__info .info__phones {
+  margin: 10px auto;
+  color: #db291b;
+  font-size: 20px;
+}
+
+.main__info .info__copy {
+  color: #a7a7a2;
+  margin: 10px auto;
 }
 
