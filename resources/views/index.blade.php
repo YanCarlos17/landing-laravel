@@ -30,8 +30,8 @@
                         <textarea name="cotizacion" id="" cols="30" rows="10" placeholder="¿Qué necesitas cotizar?" required></textarea><br>
                         <div class="box-declarations">
                             <div class="declaration">
-                                <input type="checkbox" name="declaracion" id="declaracion" />
-                                <label for="declaracion"><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad que puedes consultar <a href="https://xignacv.com/terminos">aquí</a></p></label>
+                                <input type="checkbox" name="check" id="check" required/>
+                                <label for="check"><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad que puedes consultar <a href="{{ url('https://xignacv.com/terminos')}}">aquí</a></p></label>
                             </div>
                         </div>
                         <br>
