@@ -17,6 +17,9 @@
         @media screen and (min-width:768px){
             padding-bottom: 43px;
         }
+        @media screen and (min-width:1024px){
+            padding-bottom: 25px;
+        }
         
         .intro{
 
@@ -78,16 +81,16 @@
         .info{
 
             &__logo{
-                width:55%;
-                margin: 25px auto;
+                width: 40%;
+                margin: 30px auto 20px;
 
                 @media screen and (min-width:535px){
-                    width: 40%;
+                    width: 35%;
                 }
 
                 @media screen and (min-width:768px){
-                    width: 35%;
-                    margin: 35px auto;
+                    width: 30%;
+                    margin: 35px auto 25px;
                 }
             }
             &__logo img{

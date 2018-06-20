@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400);@charset "UTF-8";
-
-* {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400);* {
   margin: 0;
   padding: 0;
 }
@@ -66,7 +64,9 @@ body {
   margin: 0 auto;
   border-radius: 7px;
   z-index: 2;
-  padding-top: 15px 0;
+  padding: 0 0 30px 0;
+  -webkit-box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.57);
+  box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.57);
 }
 
 .form__title {
@@ -96,7 +96,7 @@ body {
 }
 
 .form__input {
-  width: 75%;
+  width: 80%;
   height: 2rem;
   border: 1px solid lightgray;
   margin: 10px auto;
@@ -111,13 +111,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .form__input {
-    font-size: 25px;
+    font-size: 19px;
     height: 3rem;
   }
 }
 
 .form textarea {
-  width: 76%;
+  width: 80%;
   height: 3.5rem;
   border: 1px solid lightgray;
   margin: 10px auto;
@@ -132,7 +132,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .form textarea {
-    font-size: 25px;
+    font-size: 19px;
     height: 4.5rem;
   }
 }
@@ -156,76 +156,99 @@ body {
 }
 
 .declaration__text {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 10px;
   color: #c3c7c9;
-  width: 60%;
+  width: 70%;
   text-align: justify;
-  margin-left: 26%;
-  margin-top: -33px;
+  margin-left: 16%;
   font-weight: 200;
 }
 
 @media screen and (min-width: 768px) {
   .declaration__text {
-    width: 65%;
+    width: 77%;
     font-size: 18px;
     line-height: 16px;
-    margin-left: 23%;
+    margin-left: 10%;
     margin-top: -43px;
     margin-bottom: 20px;
   }
 }
 
-.declarations {
+.box-declarations {
   position: relative;
-  margin: 33px 0 0 0;
+  margin: 20px 0 20px 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 12%;
 }
 
-#declaracion {
-  position: absolute;
-  top: 35%;
-  left: 15%;
+@media screen and (min-width: 768px) {
+  .box-declarations {
+    margin: 65px 0 20px 0;
+  }
 }
 
-label {
-  font-size: 1.5em;
-  color: #5f19a4;
+.declaration {
+  position: relative;
 }
 
-input[type=checkbox] {
-  display: none;
-  /*solo se esconde para tener un campo personalisado*/
-}
-
-input[type=checkbox] + label {
+.declaration label {
   cursor: pointer;
 }
 
-/*esta linea significa esto + el siguiente elemento*/
-
-label:before {
+.declaration label:before,
+.declaration label:after {
   content: '';
-  content: '';
-  background: transparent;
-  border: 1px solid #5f19a4;
-  border-radius: 25px;
-  display: inline-block;
-  height: 21px;
-  width: 22px;
-  padding-top: 2px;
-  margin-left: -180px;
-  text-align: center;
-  vertical-align: middle;
+  position: absolute;
+  top: 49%;
+  border-radius: 50%;
 }
 
-input[type=checkbox]:checked + label:before {
-  content: '\2714';
-  font-size: 17px;
-  font-family: 'Times New Roman';
-  color: #5f19a4;
+.declaration label:before {
+  left: 0;
+  width: 26px;
+  height: 26px;
+  margin: -14px 0px 0 -7px;
+  background: #f7f7f7;
+  border: 2px solid #5f19a4;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .declaration label:before {
+    margin: -18px 0 0;
+  }
+}
+
+.declaration label:after {
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  margin: -9px 0px 0 -7px;
+  opacity: 0;
+  background: #5f19a4;
+}
+
+@media screen and (min-width: 768px) {
+  .declaration label:after {
+    margin: -13px 0 0;
+  }
+}
+
+.declaration input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.declaration input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .main {
@@ -257,6 +280,12 @@ input[type=checkbox]:checked + label:before {
 @media screen and (min-width: 768px) {
   .main__intro {
     padding-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__intro {
+    padding-bottom: 25px;
   }
 }
 
@@ -336,20 +365,20 @@ input[type=checkbox]:checked + label:before {
 }
 
 .main__info .info__logo {
-  width: 55%;
-  margin: 25px auto;
+  width: 40%;
+  margin: 30px auto 20px;
 }
 
 @media screen and (min-width: 535px) {
   .main__info .info__logo {
-    width: 40%;
+    width: 35%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .main__info .info__logo {
-    width: 35%;
-    margin: 35px auto;
+    width: 30%;
+    margin: 35px auto 25px;
   }
 }
 

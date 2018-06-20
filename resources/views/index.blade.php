@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Landing-1</title>
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
@@ -23,9 +24,11 @@
                     <input  class="form__input" type="email" placeholder="Email" required><br>
                     <input  class="form__input" type="number" placeholder="Teléfono de contacto" required><br>
                     <textarea name="cotizacion" id="" cols="30" rows="10" placeholder="¿Qué necesitas cotizar?" required></textarea><br>
-                    <div class="declarations">
-                        <input type="checkbox" id="declaracion" name="declaracion"/>
-                        <label for="declaracion" required><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad</p></label>
+                    <div class="box-declarations">
+                        <div class="declaration">
+                            <input type="checkbox" name="declaracion" id="declaracion" />
+                            <label for="declaracion"><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad que puedes consultar <a href="https://xignacv.com/terminos">aquí</a></p></label>
+                        </div>
                     </div>
                     <br>
                     <button type="submit">Enviar</button>

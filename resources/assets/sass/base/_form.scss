@@ -5,13 +5,14 @@
     margin: 0 auto;
     border-radius: 7px;
     z-index: 2;
-    padding-top: 15px 0;
+    padding: 0 0 30px 0;
+    -webkit-box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.57);
+    box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.57);
    
-
     &__title{
         color:rgb(95, 25, 164);
         padding: 15px 0 0 0;
-        
 
         @media screen and (min-width:768px)
         {
@@ -34,7 +35,7 @@
     }
 
     &__input {
-        width: 75%;
+        width: 80%;
         height: 2rem;
         border: 1px solid lightgray;
         margin: 10px auto;
@@ -46,13 +47,13 @@
         color: gray;
         border-radius: 4px; 
         @media screen and (min-width:768px){
-            font-size: 25px;
+            font-size: 19px;
             height: 3rem;
         }
          
     }
     & textarea{
-        width: 76%;
+        width: 80%;
         height: 3.5rem;
         border: 1px solid lightgray;
         margin: 10px auto;
@@ -64,7 +65,7 @@
         color: gray; 
         border-radius: 4px;
         @media screen and (min-width:768px){
-            font-size: 25px;
+            font-size: 19px;
             height: 4.5rem;
         }
     }
@@ -84,66 +85,79 @@
     }
 }
 .declaration__text{
-    font-size: 11px;
+    font-size: 12px;
     line-height: 10px;
     color: #c3c7c9;
-    width: 60%;
+    width: 70%;
     text-align: justify;
-    margin-left: 26%;
-    margin-top: -33px;
+    margin-left: 16%;
     font-weight: 200;
+
     @media screen and (min-width:768px){
-        width: 65%;
+        width: 77%;
         font-size: 18px;
         line-height: 16px;
-        margin-left: 23%;
+        margin-left: 10%;
         margin-top: -43px;
         margin-bottom: 20px;
     }
 }
-.declarations{
+.box-declarations{
     position: relative;
-    margin: 33px 0 0 0;
+    margin: 20px 0 20px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    padding-left: 12%;
+    @media screen and (min-width:768px){
+        margin: 65px 0 20px 0;
+    }
 }
-#declaracion{
-    position: absolute;
-    top: 35%;
-    left: 15%;
+.declaration {
+    position: relative;
+
+    & label {
+    cursor: pointer;
+    }
+    & label:before, & label:after {
+        content: '';
+        position: absolute;
+        top: 49%;
+        border-radius: 50%;
+    }
+    & label:before {
+        left: 0;
+        width: 26px;
+        height: 26px;
+        margin: -14px 0px 0 -7px;
+        background: #f7f7f7;
+        border: 2px solid rgb(95, 25, 164);
+        align-content: center;
+        @media screen and (min-width:768px){
+            margin: -18px 0 0;
+        }
+    }
+    & label:after {
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        margin: -9px 0px 0 -7px;
+        opacity: 0;
+        background: rgb(95, 25, 164);
+        @media screen and (min-width:768px){
+            margin: -13px 0 0;
+        }
+    }
+    & input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: -9999px;
+        visibility: hidden;
+    }
+    & input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transition: all .5s;
+    }
 }
-label{
-    font-size: 1.5em;
-    color:rgb(95, 25, 164);
-  }
-  
-  input[type=checkbox]{
-    display: none; /*solo se esconde para tener un campo personalisado*/
-  }
-  
-  input[type=checkbox] + label{
-    cursor:pointer;
-  }/*esta linea significa esto + el siguiente elemento*/
-  
-  label:before{
-    content:'';
-    content: '';
-    background: transparent;
-    border: 1px solid #5f19a4;
-    border-radius: 25px;
-    display: inline-block;
-    height: 21px;
-    width: 22px;
-    padding-top: 2px;
-    margin-left: -180px;
-    text-align: center;
-    vertical-align: middle;
-    
-  }
-  input[type=checkbox]:checked + label:before{
-    content: '✔';
-    font-size: 17px;
-    font-family:'Times New Roman';
-    color:rgb(95, 25, 164);
-  }
+
 
 
