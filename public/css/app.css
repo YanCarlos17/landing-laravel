@@ -13,7 +13,7 @@ body {
 }
 
 .box-contain {
-  max-width: 768px;
+  max-width: 769px;
   margin: 0 auto;
 }
 
@@ -196,8 +196,16 @@ body {
     width: 83%;
     font-size: 12px;
     line-height: 11px;
-    margin-left: 11%;
-    padding-top: 1%;
+    margin-left: 10%;
+    padding-top: 1.5%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .declaration__text {
+    margin-left: 13%;
+    font-size: 12px;
+    padding-top: 0%;
   }
 }
 
@@ -215,12 +223,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .box-declarations {
-    width: 92%;
-  }
-}
-
 .declaration {
   position: relative;
 }
@@ -235,13 +237,6 @@ body {
   position: absolute;
   top: 41%;
   border-radius: 50%;
-}
-
-@media screen and (min-width: 1400px) {
-  .declaration label:before,
-  .declaration label:after {
-    top: 50%;
-  }
 }
 
 .declaration label:before {
@@ -262,6 +257,12 @@ body {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .declaration label:before {
+    margin: -14px 0 0 3px;
+  }
+}
+
 .declaration label:after {
   left: 13px;
   top: 19px;
@@ -275,6 +276,12 @@ body {
 @media screen and (min-width: 768px) {
   .declaration label:after {
     margin: -13px 0 0 12px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .declaration label:after {
+    margin: -9px 0 0 3px;
   }
 }
 
