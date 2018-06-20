@@ -9,7 +9,7 @@ $( document ).ready(function() {
     // Boton Up para el scroll, después de 48px
 
 	$( window ).scroll(function() {
-		if($(window).scrollTop() > 60) {
+		if($(window).scrollTop() > 150) {
 			$(".up").fadeIn('fast', function(){
 			});
 		} 

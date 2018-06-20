@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,37 @@
 </head>
 <body>
     <div class="contain">
+        
         <div class="main__intro">
-            <div class="intro__text">Un like es un seguidor<br><span class="intro__span-1">un lead es un</span><br><span class="intro__span-2">cliente potencial</span></div>
-            <div class="intro__question">¿Qué prefieres para tu negocio?</div>
-            <img src="{{ asset('img/intro-img.png') }}" alt="">
+            <div class="box-contain">
+                <div class="intro__text">Un like es un seguidor<br><span class="intro__span-1">un lead es un</span><br><span class="intro__span-2">cliente potencial</span></div>
+                <div class="intro__question">¿Qué prefieres para tu marca?</div>
+                <img src="{{ asset('img/intro-img.png') }}" alt="">
+            </div>
         </div>
         <div class="main__form">
-            <form class="form" action="#">
-                <h2 class="form__title">¡Contáctanos</h2>
-                <h4 class="form__text">e inicia las conversiones<br> en tus plataformas digitales!</h4>
-                    <input  class="form__input" type="text" placeholder="Tú nombre" required> <br>
-                    <input  class="form__input" type="text" placeholder="Nombre de tu empresa" required><br>
-                    <input  class="form__input" type="email" placeholder="Email" required><br>
-                    <input  class="form__input" type="number" placeholder="Teléfono de contacto" required><br>
-                    <textarea name="cotizacion" id="" cols="30" rows="10" placeholder="¿Qué necesitas cotizar?" required></textarea><br>
-                    <div class="box-declarations">
-                        <div class="declaration">
-                            <input type="checkbox" name="declaracion" id="declaracion" />
-                            <label for="declaracion"><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad que puedes consultar <a href="https://xignacv.com/terminos">aquí</a></p></label>
+            <div class="box-contain">
+                <form class="form" action="#">
+                    <h2 class="form__title">¡Contáctanos</h2>
+                    <h4 class="form__text">e inicia las conversiones<br> en tus plataformas digitales!</h4>
+                        <input  class="form__input" type="text" placeholder="Tú nombre" required> <br>
+                        <input  class="form__input" type="text" placeholder="Nombre de tu empresa" required><br>
+                        <input  class="form__input" type="email" placeholder="Email" required><br>
+                        <input  class="form__input" type="number" placeholder="Teléfono de contacto" required><br>
+                        <textarea name="cotizacion" id="" cols="30" rows="10" placeholder="¿Qué necesitas cotizar?" required></textarea><br>
+                        <div class="box-declarations">
+                            <div class="declaration">
+                                <input type="checkbox" name="declaracion" id="declaracion" />
+                                <label for="declaracion"><p class="declaration__text">Declaras que aceptas de manera previa, expresa e informada que el tratamiento de tus datos personales se realice de acuerdo a nuestra política de privacidad que puedes consultar <a href="https://xignacv.com/terminos">aquí</a></p></label>
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <button type="submit">Enviar</button>
-            </form>
+                        <br>
+                        <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
         <div class="main__info"> 
+            <div class="box-contain">
                 <a href="https://xignacv.com">   
                     <div class="info__logo">
                         <img src="{{ asset('img/lg_xigna.png') }}" alt="">
@@ -55,11 +61,13 @@
                     <p>Xigna 2018. Todos los derechos reservados.</p>
                 </div>
             </div>
+        </div>    
         <nav class="up">
             <a href="#intro">
                 <i class="fas fa-angle-up"></i>
             </a>
         </nav>
+       
     </div>
     <script src="{{ asset('js/jquery.min.js')}}"></script>
     <script src="{{ asset('js/scroll.js')}}"></script>

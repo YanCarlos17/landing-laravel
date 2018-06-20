@@ -10,6 +10,11 @@ body{
     -o-tap-highlight-color: transparent;
     -moz-tap-highlight-color: transparent;
 }
+.box-contain{
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .up {
     position: fixed;
     bottom: 65px;
