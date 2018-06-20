@@ -137,6 +137,10 @@
                 @media screen and (min-width:768px){
                     font-size: 27px;
                 }
+                & a{
+                    color: #db291b;
+                    text-decoration: none;
+                }
             }
             &__copy{
                 color:#a7a7a2;

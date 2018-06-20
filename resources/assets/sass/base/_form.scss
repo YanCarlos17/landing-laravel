@@ -59,10 +59,7 @@
         @media screen and (min-width:768px){
             font-size: 17px;
             height: 2rem;
-        }
-        @media screen and (min-width:1400px){
-            width: 95%;
-            height: 2rem;
+            width: 85%;
         }
          
     }
@@ -81,11 +78,9 @@
         @media screen and (min-width:768px){
             font-size: 17px;
             height: 3.5rem;
+            width: 85%;
         }
-        @media screen and (min-width:1400px){
-            width: 95%;
-            height: 3rem;
-        }
+    
     }
     & button{
         width: 90%;
@@ -95,7 +90,7 @@
         color: white;
         font-size: 15px;
         @media screen and (min-width:768px){
-            width: 90%;
+            width: 88%;
             height: 2.5rem;
             font-size: 20px;
             border-radius: 8px;
@@ -114,7 +109,7 @@
         width: 85%;
         font-size: 16px;
         line-height: 16px;
-        margin-left: 10%;
+        margin-left: 8%;
         margin-top: 0px;
     }
    
@@ -122,7 +117,7 @@
 .box-declarations{
     position: relative;
     margin: 0px auto;
-    width: 80%;
+    width: 70%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     @media screen and (min-width:768px){
@@ -156,7 +151,7 @@
         border: 2px solid rgb(95, 25, 164);
         align-content: center;
         @media screen and (min-width:768px){
-            margin: -18px 0 0;
+            margin: -18px 0 0 12px;
         }
     }
     & label:after {
@@ -167,7 +162,7 @@
         opacity: 0;
         background: rgb(95, 25, 164);
         @media screen and (min-width:768px){
-            margin: -13px 0 0;
+            margin: -13px 0 0 12px;
         }
     }
     & input[type="checkbox"] {

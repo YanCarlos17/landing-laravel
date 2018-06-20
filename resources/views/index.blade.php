@@ -54,7 +54,9 @@
                     </div>
                 </a>
                 <div class="info__phones">
-                    <span>Cel:3128518887</span><br>
+                    <a href="#">
+                        <span>Cel:3128518887</span>
+                    </a><br>
                     <span>Tel:3951604</span>
                 </div>
                 <div class="info__copy">
