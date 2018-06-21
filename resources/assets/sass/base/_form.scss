@@ -38,10 +38,7 @@
             margin: 0 0 20px 0;
             line-height: 20px;
         }
-        @media screen and (min-width:1400px){
-            font-size: 26px;
-            line-height: 25px;
-        }
+
     }
 
     &__input {
@@ -109,16 +106,10 @@
         width: 83%;
         font-size: 12px;
         line-height: 11px;
-        margin-left: 10%;
         padding-top: 1.5%;
+        margin-left: 8.5%;
     }
-    @media screen and (min-width:770px){
-        width: 88%;
-        font-size: 12px;
-        line-height: 11px;
-        margin-left: 12%;
-        padding-top: 1%;
-    }
+    
     
    
 }
@@ -147,7 +138,7 @@
     }
     & label:before {
         left: -33px;
-        top: 19px;
+        top: 35%;
         width: 26px;
         height: 26px;
         margin: -14px 0px 0 5px;
@@ -155,19 +146,21 @@
         border: 2px solid rgb(95, 25, 164);
         align-content: center;
         @media screen and (min-width:768px){
-            margin: -14px 0 0 50px;
+            margin: -12px 0 0 32px;
+            top: 51%;
         }
     }
     & label:after {
         left: -28px;
-        top: 19px;
+        top: 35%;
         width: 20px;
         height: 20px;
         margin: -9px 0px 0 5px;
         opacity: 0;
         background: rgb(95, 25, 164);
         @media screen and (min-width:768px){
-            margin: -9px 0 0 50px;
+            margin: -7px 0 0 32px;
+            top: 51%;
         }
     }
     & input[type="checkbox"] {
