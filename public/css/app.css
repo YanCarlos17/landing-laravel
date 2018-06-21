@@ -19,7 +19,7 @@ body {
 
 .up {
   position: fixed;
-  bottom: 65px;
+  bottom: 20px;
   right: 10px;
   width: 45px;
   height: 45px;
@@ -188,8 +188,8 @@ body {
 @media screen and (min-width: 768px) {
   .declaration__text {
     width: 83%;
-    font-size: 12px;
-    line-height: 11px;
+    font-size: 15px;
+    line-height: 12px;
     padding-top: 1.2%;
     margin-left: 8.5%;
   }
